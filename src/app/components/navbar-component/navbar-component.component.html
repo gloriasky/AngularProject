@@ -1,0 +1,15 @@
+<app-setting-component *ngIf="settingDisplay"
+                       [userName]="userName"
+                       (close)="close($event)"
+                       (onUserNameChange)="onUserNameChange($event)">
+</app-setting-component>
+<ul>
+  <li>
+    <button class="setting" (click)="display()"></button>
+  </li>
+</ul>
+<div class="center">
+  <div class="hello" *ngIf="userName">
+    <div class="welcome">Welcome here, {{userName}}!</div>
+  </div>
+</div>

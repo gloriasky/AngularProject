@@ -1,0 +1,11 @@
+<div class="center">
+  <input [(ngModel)]="neededString" type="text">
+    <select [(ngModel)]="currentColor">
+      <option value="" disabled>Choose a color</option>
+      <option *ngFor="let color of colors" [value]="color">
+        {{ color}}
+      </option>
+    </select>
+  <button class="submitFilter" (click)="filterArray()">{{"submitFilter"  }}</button>
+  <button class="resetFilter" (click)="resetFilter()">{{"resetFilter" }}</button>
+</div>

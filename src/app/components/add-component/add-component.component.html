@@ -1,0 +1,12 @@
+<div class="center">
+  <form [formGroup]="inputForm" (ngSubmit)="addString()">
+    <label>
+      Your string:
+      <input type="text" placeholder="Input your string"
+             formControlName="userStr" minlength="3" maxlength="15" required>
+    </label>
+
+    <button class="add" type="submit" [disabled]="!inputForm.valid" name="add">Submit</button>
+  </form>
+  <div *ngIf="!inputForm.valid"><p>"notification"</p></div>
+</div>

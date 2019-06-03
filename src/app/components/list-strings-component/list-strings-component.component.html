@@ -1,0 +1,15 @@
+<div class="center" *ngIf="!strings.length">{{'noEl'}}</div>
+<table *ngIf="strings.length" class="center">
+  <tr *ngFor="let str of strings; let i=index">
+    <td>
+      <div ngClass="{{str.color}}" title="{{ str.color }}"></div>
+    </td>
+    <td class="string">{{ str.strLabel }}</td>
+    <td>
+      <div class="reset" (click)="resetTimer(i)" title="{{'reset'}}"></div>
+    </td>
+    <td>
+      <div class="delete" (click)="deleteString(i)" title="{{'remove' }}"></div>
+    </td>
+  </tr>
+</table>

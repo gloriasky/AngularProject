@@ -1,0 +1,21 @@
+{
+  "add": "Add",
+  "onDelete": "Delete",
+  "string": "the string doesn't contain numbers",
+  "lang": "Languages",
+  "green": "Fresh",
+  "yellow": "Lain",
+  "red": "Rotten",
+  "remove": "Delete",
+  "onReset": "Reset",
+  "notification": "You must enter at least 3 characters",
+  "noEl": "no elements",
+  "chooselang": "Choose language: ",
+  "entername": "Enter your name: ",
+  "hello": "Hello, ",
+  "none": "any",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "submitFilter": "Search",
+  "resetFilter": "Reset filter"
+}

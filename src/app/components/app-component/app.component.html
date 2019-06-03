@@ -1,0 +1,11 @@
+<app-navbar-component>
+</app-navbar-component>
+<app-add-component (onAdd)="addString($event)">
+</app-add-component>
+<app-string-filter-component (onFilterObjChange)="onFilterObjChange($event)"
+                             [colors]="colors">
+</app-string-filter-component>
+<app-list-strings-component [strings]="strings"
+                            (deletIndex)="delete($event)"
+                            (resetIndex)="reset($event)">
+</app-list-strings-component>

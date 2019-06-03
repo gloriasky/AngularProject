@@ -1,0 +1,19 @@
+<span class="back">
+    <div class="set">
+        <div class="close" (click)="hide()"></div>
+        <label class="labelname">{{'entername' }}</label>
+        <input class="inputname" placeholder="Input your name" [(ngModel)]="userName" type="text">
+        <div class="langSelect">
+          <label class="labelname" for="lang">{{'chooselang'}}
+            <select class="lang" id = "lang" [(ngModel)]="currentLang">
+              <option value="" disabled>Choose a language</option>
+              <option *ngFor="let lang of langs" [value]="lang">{{ lang}}</option>
+            </select>
+          </label>
+        </div>
+        <div>
+            <button class="submit" (click)="sendName()">{{'submit' }}</button>
+            <button class="cancel" (click)="reset()">{{'cancel'}}</button>
+        </div>
+    </div>
+</span>
